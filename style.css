@@ -1,0 +1,27 @@
+:root {
+    line-height: 1.2;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ol[role='list'],
+ul[role='list'] {
+    list-style: none;
+    padding-inline: 0;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+}
+
+body {
+    min-height: 100vh;
+}
