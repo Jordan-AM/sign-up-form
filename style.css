@@ -84,7 +84,7 @@ body {
     color: var(--text-color);
 }
 
-/* Main section of CSS */
+/* Main container CSS */
 
 #main-container {
     width: 100%;
@@ -97,13 +97,13 @@ body {
 /* Top container */
 
 .top-container {
-    border-bottom: 1px solid white;
     padding: 6rem 2rem 2rem;
     font-weight: bold;
     font-size: 1.2rem;
     display: flex;
     flex-direction: column;
     width: var(--main-containers-width);
+    height: 30vh;
     gap: 2rem;
     background-color: rgb(225, 225, 225);
 }
@@ -122,7 +122,7 @@ body {
     height: 40vh;
     background-color: white;
     width: inherit;
-    box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 -2px 10px -5px inset rgba(0, 0, 0, 0.8), 0 2px 10px -5px inset rgba(0, 0, 0, 0.8);
 }
 
 form {
@@ -130,6 +130,7 @@ form {
     font-size: 1rem;
     font-weight: bold;
     display: flex;
+    width: var(--main-containers-width);
     gap: 5rem;
     justify-content: start;
     align-items: center;
@@ -143,7 +144,6 @@ form {
 input {
     font-size: 1.1rem;
     border: 1px solid var(--light-input-border);
-    /* subtle white-gray */
     border-radius: 5px;
     display: block;
     outline: none;
@@ -154,19 +154,57 @@ input:focus {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Focused AND invalid */
 input:focus:invalid {
     border-color: darkorange;
 }
 
-/* Valid but not focused */
 input:valid:not(:focus) {
     border-color: var(--light-input-border);
 }
 
-/* Invalid but not focused */
 input:invalid:not(:focus) {
     border-color: var(--light-input-border);
 }
 
 /* Bottom container */
+
+.bottom-container{
+    padding: 2rem 2rem 2rem;
+    width: var(--main-containers-width);
+    background-color: rgb(225, 225, 225);
+    height: 30vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.create-account-btn{
+    font-size: 1.5rem;
+    background-color: darkgreen;
+    color: rgb(230, 230, 230);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: hidden;
+    box-shadow: 0 2px 5px 1px var(--black-half-opacity);
+    cursor: pointer;
+}
+
+.create-account-btn:hover{
+    background-color: rgba(0, 150, 0, 0.8);
+    color: white;
+    text-shadow: 0 0 1 white;
+    box-shadow: 0 2px 5px 1px rgba(0, 100, 0, 0.8);
+}
+
+.login-link{
+    color: darkgreen;
+    text-shadow: 0 0 1px darkgreen;
+    text-decoration: none;
+}
+
+.login-link:hover{
+    text-decoration: underline;
+    text-shadow: 0 0 2px darkgreen;
+}
