@@ -1,13 +1,116 @@
 <!DOCTYPE html>
-<html lang='en'>
-    <head>
-        <meta charset='UTF-8' />
-        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-        <link rel='stylesheet' href='style.css' />
-        <title>Sign-up Form</title>
-    </head>
-    <body>
-        
-        <script src='' async defer></script>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign-up Form</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header id="header">
+        <div class="header-container">
+          <img class="odin-logo" src="odin-lined.png" alt="Odin Logo" />
+          <h1 class="header">Odin</h1>
+        </div>
+        <div class="photo-credit">
+          <p class="credit">
+            Photo by
+            <a
+              href="https://unsplash.com/@geniequo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              >Heshan Perera</a
+            >
+            on
+            <a
+              href="https://unsplash.com/photos/red-and-white-tower-during-night-time-5gXNgMqUUpc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              >Unsplash</a
+            >
+          </p>
+        </div>
+      </header>
+      <main id="main-container">
+        <div class="top-container">
+          <p class="para1">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+          </p>
+          <p class="para2">
+            Sign up <span><i>now</i></span> to get started.
+          </p>
+          <p class="para3">
+            You <span><i>know</i></span> you want to.
+          </p>
+        </div>
+        <div class="middle-container">
+          <h2 class="form-header">Let's do this!</h2>
+          <form action="">
+            <div class="form-first-column">
+              <div class="first-name-form">
+                <label for="user-first-name"
+                  ><span class="label-name">FIRST NAME</span></label
+                >
+                <input
+                  type="text"
+                  id="user-first-name"
+                  name="user-first-name"
+                />
+              </div>
+              <div class="email-form">
+                <label for="user-email"
+                  ><span class="label-name">EMAIL</span></label
+                >
+                <input type="email" id="user-email" name="user-email" />
+              </div>
+              <div class="password-form">
+                <label for="user-password"
+                  ><span class="label-name">PASSWORD</span></label
+                >
+                <input
+                  type="password"
+                  id="user-password"
+                  name="user-password"
+                  minlength="6"
+                  maxlength="16"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-second-column">
+              <div class="last-name-form">
+                <label for="user-last-name"
+                  ><span class="label-name">LAST NAME</span></label
+                >
+                <input type="text" id="user-last-name" name="user-last-name" />
+              </div>
+              <div class="phone-number-form">
+                <label for="user-phone-number"
+                  ><span class="label-name">PHONE NUMBER</span></label
+                >
+                <input
+                  type="number"
+                  id="user-phone-number"
+                  name="user-phone-number"
+                />
+              </div>
+              <div class="password-confirmation-form">
+                <label for="user-password-confirmation"
+                  ><span class="label-name">CONFIRM PASSWORD</span></label
+                >
+                <input
+                  type="password"
+                  name="user-password-confirmation"
+                  id="user-password-confirmation"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="bottom-container">
+
+        </div>
+      </main>
+    </div>
+    <script src="" async defer></script>
+  </body>
 </html>
