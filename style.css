@@ -36,11 +36,12 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    min-width: 480px;
+    min-width: 640px;
     background-image: url(./images/heshan-perera-5gXNgMqUUpc-unsplash.jpg);
     background-position-x: center;
 }
 
+/* Header */
 .header-container {
     display: flex;
     justify-content: center;
@@ -65,6 +66,7 @@ body {
     font-style: italic;
 }
 
+/* Credits */
 .photo-credit {
     display: flex;
     justify-content: center;
@@ -80,3 +82,30 @@ body {
 }
 
 /* Main section of CSS */
+
+#main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: rgb(240, 240, 240);
+    
+}
+
+/* Top container */
+
+.top-container{
+    padding: 8rem 8rem 2rem 2rem;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    font-size: 1.3rem;
+}
+
+.para1, .para2 {
+    width: 650px;
+}
+
+.para3 {
+    margin-top: 2rem;
+}
+
