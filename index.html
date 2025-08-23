@@ -11,7 +11,11 @@
     <div class="wrapper">
       <header id="header">
         <div class="header-container">
-          <img class="odin-logo" src="./images/odin-lined.png" alt="Odin Logo" />
+          <img
+            class="odin-logo"
+            src="./images/odin-lined.png"
+            alt="Odin Logo"
+          />
           <h1 class="header">Odin</h1>
         </div>
         <div class="photo-credit">
@@ -33,8 +37,8 @@
         <div class="top-container">
           <div class="top-para-container">
             <p class="para1">
-              This is not a real online service! You know you need something like
-              this in your life to help you realize your deepest dreams.
+              This is not a real online service! You know you need something
+              like this in your life to help you realize your deepest dreams.
             </p>
             <p class="para2">
               Sign up <span><i>now</i></span> to get started.
@@ -52,23 +56,32 @@
             <div class="form-first-column">
               <div class="first-name-form">
                 <label for="user-first-name"
-                  ><span class="label-name">FIRST NAME</span></label
+                  ><span class="label-name">&ast;FIRST NAME</span></label
                 >
                 <input
                   type="text"
                   id="user-first-name"
                   name="user-first-name"
+                  minlength="2"
+                  placeholder="Firstname"
+                  title="Please insert your first name."
                 />
               </div>
               <div class="email-form">
                 <label for="user-email"
-                  ><span class="label-name">EMAIL</span></label
+                  ><span class="label-name">&ast;EMAIL</span></label
                 >
-                <input type="email" id="user-email" name="user-email" />
+                <input
+                  type="email"
+                  id="user-email"
+                  name="user-email"
+                  placeholder="name@example.com"
+                  title="Please insert your email."
+                />
               </div>
               <div class="password-form">
                 <label for="user-password"
-                  ><span class="label-name">PASSWORD</span></label
+                  ><span class="label-name">&ast;PASSWORD</span></label
                 >
                 <input
                   type="password"
@@ -76,6 +89,7 @@
                   name="user-password"
                   minlength="6"
                   maxlength="16"
+                  title="Mininum of 6, maximum of 16."
                   required
                 />
               </div>
@@ -83,9 +97,16 @@
             <div class="form-second-column">
               <div class="last-name-form">
                 <label for="user-last-name"
-                  ><span class="label-name">LAST NAME</span></label
+                  ><span class="label-name">&ast;LAST NAME</span></label
                 >
-                <input type="text" id="user-last-name" name="user-last-name" />
+                <input
+                  type="text"
+                  id="user-last-name"
+                  name="user-last-name"
+                  minlength="2"
+                  placeholder="Lastname"
+                  title="Please insert your last name."
+                />
               </div>
               <div class="phone-number-form">
                 <label for="user-phone-number"
@@ -95,16 +116,22 @@
                   type="number"
                   id="user-phone-number"
                   name="user-phone-number"
+                  placeholder="0"
+                  min="8"
                 />
               </div>
               <div class="password-confirmation-form">
                 <label for="user-password-confirmation"
-                  ><span class="label-name">CONFIRM PASSWORD</span></label
+                  ><span class="label-name">&ast;CONFIRM PASSWORD</span></label
                 >
                 <input
                   type="password"
                   name="user-password-confirmation"
                   id="user-password-confirmation"
+                  minlength="6"
+                  maxlength="16"
+                  title="Mininum of 6, maximum of 16."
+                  required
                 />
               </div>
             </div>
