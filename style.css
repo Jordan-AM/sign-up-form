@@ -1,5 +1,6 @@
 :root {
     line-height: 1.2;
+    --text-color: #BF0F30;
 }
 
 *,
@@ -22,53 +23,60 @@ body {
     overflow: hidden;
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     width: 100vw;
     height: 100vh;
 }
 
-#header{
-    color: #eee;
-    min-width: 640px;
+/* Header section of CSS */
+
+#header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    min-width: 480px;
     background-image: url(./images/heshan-perera-5gXNgMqUUpc-unsplash.jpg);
+    background-position-x: center;
 }
 
-.header-container{
-    text-shadow: 0 0 3px white;
+.header-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50vh;
-    box-shadow: 
-    0 25px 25px -10px inset rgba(20, 20, 20, 0.5),
-    0 -25px 25px -10px inset rgba(20, 20, 20, 0.5);
+    margin-top: 30rem;
+    box-shadow:
+        0 25px 25px -10px inset rgba(20, 20, 20, 0.5),
+        0 -25px 25px -10px inset rgba(20, 20, 20, 0.5);
     width: 100%;
 }
 
-.odin-logo{
+.odin-logo {
     width: 5rem;
     transform: skewX(-10deg);
 }
 
-.header{
+.header {
+    background: linear-gradient(to right, #BF0F30, #BF532C);
+    background-clip: text;
+    color: transparent;
     font-size: 5rem;
     font-style: italic;
 }
 
-.photo-credit{
+.photo-credit {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 0.5rem;
     width: 100%;
     background-color: rgba(20, 20, 20, 0.5);
+    color: var(--text-color);
 }
 
-.credit > a {
-    color:#eee;
+.credit>a {
+    color: var(--text-color);
 }
+
+/* Main section of CSS */
