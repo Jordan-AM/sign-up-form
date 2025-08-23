@@ -2,6 +2,8 @@
     line-height: 1.2;
     --text-color: #BF0F30;
     --main-containers-width: calc(100vw - 640px);
+    --black-half-opacity: rgba(20, 20, 20, 0.5);
+    --light-input-border: rgba(220, 220, 220, 0.8);
 }
 
 *,
@@ -49,8 +51,8 @@ body {
     align-items: center;
     margin-top: 30rem;
     box-shadow:
-        0 25px 25px -10px inset rgba(20, 20, 20, 0.5),
-        0 -25px 25px -10px inset rgba(20, 20, 20, 0.5);
+        0 25px 25px -10px inset var(--black-half-opacity),
+        0 -25px 25px -10px inset var(--black-half-opacity);
     width: 100%;
 }
 
@@ -74,7 +76,7 @@ body {
     align-items: center;
     padding: 0.5rem;
     width: 100%;
-    background-color: rgba(20, 20, 20, 0.5);
+    background-color: var(--black-half-opacity);
     color: var(--text-color);
 }
 
@@ -140,7 +142,7 @@ form {
 
 input {
     font-size: 1.1rem;
-    border: 1px solid rgba(220, 220, 220, 0.8);
+    border: 1px solid var(--light-input-border);
     /* subtle white-gray */
     border-radius: 5px;
     display: block;
@@ -159,12 +161,12 @@ input:focus:invalid {
 
 /* Valid but not focused */
 input:valid:not(:focus) {
-    border-color: rgba(220, 220, 220, 0.8);
+    border-color: var(--light-input-border);
 }
 
 /* Invalid but not focused */
 input:invalid:not(:focus) {
-    border-color: rgba(220, 220, 220, 0.8);
+    border-color: var(--light-input-border);
 }
 
 /* Bottom container */
